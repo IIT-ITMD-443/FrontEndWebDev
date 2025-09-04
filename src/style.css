@@ -1,20 +1,51 @@
 .wrapper {
-  display: flex;  
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center; 
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
 }
-
-.header {
-  padding: 10px;
-  flex: 1 100%;
-}
-
-.header {
-  background: tomato;
-}
-
 
 body {
-  padding: 2em; 
+    padding: 0;
+    margin: 0; 
+}
+
+.logo img {
+    width: 20em;
+    padding: 1em;
+}
+
+.header {
+    display: flex;
+    height: 200px;
+    flex: 1 100%;
+    background-image: url("images/bg.jpg");
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid black;
+ 
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap; 
+    flex: 1 100%;
+    list-style: none; /* Removes bullet points */
+    padding: 1em;
+}
+
+.navigation li {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.navigation a {
+    text-decoration: none; /* Removes underline */
+    padding: 1em; 
+    display: block; /* Makes anchor fill li */
+    color: black;
 }
